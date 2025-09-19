@@ -1,6 +1,5 @@
 pipeline {
-    agent { docker { image 'node:16' } }
-
+    agent any
     environment {
         APP_DIR   = "app"
         BUILD_ZIP = "build.zip"
